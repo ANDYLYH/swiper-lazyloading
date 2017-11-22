@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>swiper轮播--预加载</title>
+		<link rel="stylesheet" href="swiper/dist/css/swiper.min.css" />
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="swiper/dist/js/swiper.min.js"></script>
+		<style>
+			.content{
+				height: 300px;
+				width: 400px;
+			}
+			.content img{
+				height: 300px;
+				width: 400px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="swiper-container content">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img data-src="http://soushi-test.oss-cn-shenzhen.aliyuncs.com/block/5788/20171016/3/150814750151681907/ec3948a55ee163974dc61e53e9493e57.JPG?x-oss-process=style/high" class="swiper-lazy" src="http://wx.soushi88.com/src/images/common/bitmap.png">
+				</div>
+				<div class="swiper-slide">
+					<img data-src="http://soushi-test.oss-cn-shenzhen.aliyuncs.com/block/5788/20171110/3/151029796300563579/1f540c4f77a15b91f1cddb445358e73c.jpg?x-oss-process=style/high" class="swiper-lazy" src="http://wx.soushi88.com/src/images/common/bitmap.png">
+				</div>
+				<div class="swiper-slide">
+					<img data-src="http://soushi-test.oss-cn-shenzhen.aliyuncs.com/block/5788/20171110/3/151029796300563579/1f540c4f77a15b91f1cddb445358e73c.jpg?x-oss-process=style/high" class="swiper-lazy" src="http://wx.soushi88.com/src/images/common/bitmap.png">
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		$(function() {
+			var mySwiper = new Swiper('.swiper-container', {
+				lazyLoading: true,
+			})
+		})
+	</script>
+
+</html>
